@@ -12,17 +12,31 @@
   <div class="box">
   <body>
     <header>
-      <input type="search" placeholder="Enter a city..." required />
-      <input type="submit" value="Search" />
+        <form>
+      <input type="search"
+       placeholder="Enter a city..."
+        required 
+        class="search-inp"/>
+      <input id="submitinp" 
+      type="submit" 
+      value="Search" 
+      class="submit-inp" />
+      </form>
     </header>
 
     <main>
-      <h1>Srinagar</h1>
-      <p>
+        <div class="place">
+            <div>
+      <h1 class="city">Srinagar</h1>
+      <p class="details">
         Saturday 08:06, scattered clouds<br />
-        Humidity:66%, Wind: 3.13km/h
-      </p>
-      ⛅️17°C
+        Humidity:<strong>66%</strong>, Wind: <strong>3.13km/h</strong></div>
+      </p><div class="all-temp">
+      <div class="emoji">🌤</div>
+      <div class="temp">17</div>
+        <div class="cel">°C</div>
+      </div>
+      </div>
     </main>
 
     <footer>

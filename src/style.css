@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(219, 240, 244);
+  background-color: #dbf0f4;
   font-family: "Merriweather Sans", sans-serif;
   font-optical-sizing: auto;
   font-weight: weight;
@@ -12,4 +12,71 @@ body {
   padding: 30px;
   box-shadow: 10px 20px 60px rgb(242, 237, 204);
   border-radius: 15px;
+}
+header {
+  border-bottom: 1px solid #dbf0f4;
+  padding: 0 0 20px 0;
+}
+footer {
+  border-top: 1px solid #dbf0f4;
+  padding: 20px 0 0 0;
+  text-align: center;
+}
+a {
+  color: #aeaa83;
+}
+.city {
+  margin: 0;
+  font-size: 33px;
+  font-weight: 700;
+}
+.details {
+  font-size: 16px;
+  line-height: 25px;
+  color: #56575e;
+}
+.search-inp {
+  background-color: #e5f2f5;
+  max-width: 400px;
+  border: none;
+  border-radius: 4px;
+  width: 80%;
+  padding: 14px 20px;
+  font-weight: bold;
+}
+.submit-inp {
+  background-color: #f4f0c7;
+  padding: 14px 20px;
+  width: 15%;
+  border: none;
+  border-radius: 7px;
+  margin-left: 4px;
+  font-size: 13px;
+  color: #56575e;
+  font-weight: bold;
+}
+.place {
+  display: flex;
+  justify-content: space-between;
+}
+.all-temp {
+  display: flex;
+}
+.temp {
+  font-size: 70px;
+  font-weight: bold;
+}
+.emoji {
+  font-size: 50px;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+.cel {
+  font-size: 27px;
+}
+main {
+  padding: 20px 0;
+}
+strong {
+  color: rgb(99, 121, 181);
 }
