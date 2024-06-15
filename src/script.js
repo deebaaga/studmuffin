@@ -18,9 +18,17 @@ window.onload = function () {
 
   function displayTemp(response) {
     let temperature = Math.round(response.data.temperature.current);
+
     let city = response.data.city;
+    console.log(response.city);
 
     let description = response.data.condition.description;
+
+    let humidity = response.data.temperature.humidity;
+
+    let wind = response.data.wind.speed;
+
+    let iconUrl = response.data.condition.icon_url;
 
     let tempp = document.querySelector("#degree");
     tempp.innerHTML = `${temperature}`;
@@ -30,6 +38,15 @@ window.onload = function () {
 
     let feelss = document.querySelector("#feels");
     feelss.innerHTML = `${description}`;
+
+    let humidd = document.querySelector("#humid");
+    humidd.innerHTML = `${humidity}%`;
+
+    let windd = document.querySelector("#wind");
+    windd.innerHTML = `${wind} km/h`;
+
+    let iconn = document.querySelector("#icon");
+    iconn.innerHTML = `<img src="${iconUrl}" class="emoji" />`;
   }
   function cityinput(event) {
     event.preventDefault();
